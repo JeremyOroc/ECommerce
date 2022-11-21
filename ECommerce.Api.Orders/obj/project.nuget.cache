@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6emATS2T9JuBvlgfV1FNfagPJWaHJuuhHtdOpwoRMuKVw4SFc7cp0MxGHSKI2oyoGEJ5ldYhUpJurDg63hbzEQ==",
+  "dgSpecHash": "m0Ti375uXxF6stsiuEVQCyyM5daH6EO5s+MVWjUOlIdgS+mwPe+u2MPSCXeC+c0IraJRXXZq5ATmO3uSSNs2zg==",
   "success": true,
   "projectFilePath": "C:\\Users\\2034933\\Desktop\\ECommerce\\ECommerce.Api.Orders\\ECommerce.Api.Orders.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\2034933\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.31\\microsoft.extensions.logging.abstractions.3.1.31.nupkg.sha512",
     "C:\\Users\\2034933\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\2034933\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\2034933\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\2034933\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\2034933\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\2034933\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
