@@ -1,3 +1,4 @@
+name: dockercompose7844371426659205362
 services:
   ecommerce.api.customers:
     build:
@@ -6,9 +7,13 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: ecommerceapicustomers
+    networks:
+      default: null
     ports:
-    - published: 6002
+    - mode: ingress
       target: 80
+      published: "6002"
+      protocol: tcp
   ecommerce.api.orders:
     build:
       context: C:\Users\2034933\Desktop\ECommerce
@@ -16,9 +21,13 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: ecommerceapiorders
+    networks:
+      default: null
     ports:
-    - published: 6003
+    - mode: ingress
       target: 80
+      published: "6003"
+      protocol: tcp
   ecommerce.api.products:
     build:
       context: C:\Users\2034933\Desktop\ECommerce
@@ -26,9 +35,13 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: ecommerceapiproducts
+    networks:
+      default: null
     ports:
-    - published: 6001
+    - mode: ingress
       target: 80
+      published: "6001"
+      protocol: tcp
   ecommerce.api.search:
     build:
       context: C:\Users\2034933\Desktop\ECommerce
@@ -39,7 +52,13 @@ services:
       Services__Orders: http://ecommerce.api.orders
       Services__Products: http://ecommerce.api.products
     image: ecommerceapisearch
+    networks:
+      default: null
     ports:
-    - published: 6004
+    - mode: ingress
       target: 80
-version: '3.4'
+      published: "6004"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose7844371426659205362_default

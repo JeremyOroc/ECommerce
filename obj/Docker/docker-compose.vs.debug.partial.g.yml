@@ -13,21 +13,19 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages;c:\.nuget\fallbackpackages2
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ecommerce.api.customers$
     volumes:
       - C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Customers:C:\app
       - C:\Users\2034933\Desktop\ECommerce:C:\src
-      - C:\Users\2034933\onecoremsvsmon\16.11.1199.0:C:\remote_debugger:ro
-      - C:\Users\2034933\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:c:\.nuget\fallbackpackages:ro
-      - C:\Program Files (x86)\Microsoft\Xamarin\NuGet\:c:\.nuget\fallbackpackages2:ro
+      - C:\Users\2034933\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_ecommerce.api.customers$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages --additionalProbingPath c:\\.nuget\\fallbackpackages2  \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Customers.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ecommerce.api.customers$ \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Customers.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
@@ -43,21 +41,19 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages;c:\.nuget\fallbackpackages2
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ecommerce.api.orders$
     volumes:
       - C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders:C:\app
       - C:\Users\2034933\Desktop\ECommerce:C:\src
-      - C:\Users\2034933\onecoremsvsmon\16.11.1199.0:C:\remote_debugger:ro
-      - C:\Users\2034933\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:c:\.nuget\fallbackpackages:ro
-      - C:\Program Files (x86)\Microsoft\Xamarin\NuGet\:c:\.nuget\fallbackpackages2:ro
+      - C:\Users\2034933\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_ecommerce.api.orders$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages --additionalProbingPath c:\\.nuget\\fallbackpackages2  \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Orders.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ecommerce.api.orders$ \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Orders.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
@@ -74,21 +70,19 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages;c:\.nuget\fallbackpackages2
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ecommerce.api.products$
     volumes:
       - C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products:C:\app
       - C:\Users\2034933\Desktop\ECommerce:C:\src
-      - C:\Users\2034933\onecoremsvsmon\16.11.1199.0:C:\remote_debugger:ro
-      - C:\Users\2034933\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:c:\.nuget\fallbackpackages:ro
-      - C:\Program Files (x86)\Microsoft\Xamarin\NuGet\:c:\.nuget\fallbackpackages2:ro
+      - C:\Users\2034933\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_ecommerce.api.products$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages --additionalProbingPath c:\\.nuget\\fallbackpackages2  \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Products.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ecommerce.api.products$ \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Products.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
@@ -105,21 +99,19 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages;c:\.nuget\fallbackpackages2
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ecommerce.api.search$
     volumes:
       - C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search:C:\app
       - C:\Users\2034933\Desktop\ECommerce:C:\src
-      - C:\Users\2034933\onecoremsvsmon\16.11.1199.0:C:\remote_debugger:ro
-      - C:\Users\2034933\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:c:\.nuget\fallbackpackages:ro
-      - C:\Program Files (x86)\Microsoft\Xamarin\NuGet\:c:\.nuget\fallbackpackages2:ro
+      - C:\Users\2034933\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_ecommerce.api.search$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages --additionalProbingPath c:\\.nuget\\fallbackpackages2  \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Search.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ecommerce.api.search$ \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Search.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
