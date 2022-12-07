@@ -67,3 +67,8 @@ C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.dll
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.pdb
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.genruntimeconfig.cache
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.MvcApplicationPartsAssemblyInfo.cs

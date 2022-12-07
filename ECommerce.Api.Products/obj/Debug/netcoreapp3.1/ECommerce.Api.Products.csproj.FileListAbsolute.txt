@@ -123,3 +123,9 @@ C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\obj\Debug\netcoreapp3.
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\obj\Debug\netcoreapp3.1\ECommerce.Api.Products.dll
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\obj\Debug\netcoreapp3.1\ECommerce.Api.Products.pdb
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\obj\Debug\netcoreapp3.1\ECommerce.Api.Products.genruntimeconfig.cache
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\obj\Debug\netcoreapp3.1\ECommerce.Api.Products.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Products\bin\Debug\netcoreapp3.1\ECommerce.Api.Products.xml
