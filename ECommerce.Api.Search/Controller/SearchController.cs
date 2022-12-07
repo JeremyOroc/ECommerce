@@ -1,5 +1,6 @@
 ﻿using ECommerce.Api.Search.Interfaces;
 using ECommerce.Api.Search.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace ECommerce.Api.Search.Controller
 {
     [ApiController]
     [Route("api/search")]
+    [Produces("application/json")]       //attribute helps create precise API documentation
     public class SearchController : ControllerBase
     {
         private readonly ISearchService searchService;
@@ -19,7 +21,16 @@ namespace ECommerce.Api.Search.Controller
             this.searchService = searchService;
         }
 
+        /// <summary>
+        /// Searches for an term/object based on the term/object's customer id.
+        /// </summary>
+        /// <param name="term">The term/object that is searched for.</param>
+        /// <returns>An IActionResult.</returns>
+        /// <response code="200">Returns the requested term/object.</response>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> SearchAsync(SearchTerm term)
         {
             var result = await searchService.SearchAsync(term.CustomerId);

@@ -83,3 +83,9 @@ C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.dll
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.pdb
 C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.genruntimeconfig.cache
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\ECommerce.Api.Orders.xml
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\2034933\Desktop\ECommerce\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.MvcApplicationPartsAssemblyInfo.cs

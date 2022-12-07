@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ECommerce.Api.Customers</name>
+    </assembly>
+    <members>
+        <member name="M:ECommerce.Api.Customers.Controllers.CustomersController.GetCustomersAsync">
+            <summary>
+            Gets all customers in the database.
+            </summary>
+            <returns>An IActionResult.</returns>
+            <response code="200">Returns the requested customers.</response>
+        </member>
+        <member name="M:ECommerce.Api.Customers.Controllers.CustomersController.GetCustomerAsync(System.Int32)">
+            <summary>
+            Get customer by the provided id.
+            </summary>
+            <param name="id">The customer id to get.</param>
+            <returns>An IActionResult.</returns>
+            <response code="200">Returns the requested customer.</response>
+        </member>
+    </members>
+</doc>

@@ -8,7 +8,7 @@
             <summary>
             Gets all the products in the database.
             </summary>
-            <returns>an IActionResult.</returns>
+            <returns>An IActionResult.</returns>
             <response code="200">Returns the requested products.</response>
         </member>
         <member name="M:ECommerce.Api.Products.Controllers.ProductsController.GetProductAsync(System.Int32)">
@@ -16,7 +16,7 @@
             Get product by the provided id.
             </summary>
             <param name="id">The product id to get.</param>
-            <returns>an IActionResult.</returns>
+            <returns>An IActionResult.</returns>
             <response code="200">Returns the requested product.</response>
         </member>
     </members>
