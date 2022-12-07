@@ -20,7 +20,7 @@ namespace ECommerce.Api.Products.Controllers
         /// <summary>
         /// Gets all the products in the database.
         /// </summary>
-        /// <returns>an IActionResult.</returns>
+        /// <returns>An IActionResult.</returns>
         /// <response code="200">Returns the requested products.</response>
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -40,7 +40,7 @@ namespace ECommerce.Api.Products.Controllers
         /// Get product by the provided id.
         /// </summary>
         /// <param name="id">The product id to get.</param>
-        /// <returns>an IActionResult.</returns>
+        /// <returns>An IActionResult.</returns>
         /// <response code="200">Returns the requested product.</response>
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
